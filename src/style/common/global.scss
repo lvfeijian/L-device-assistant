@@ -1,0 +1,57 @@
+@import "reset.scss";
+@import "iconfont.scss";
+.page{
+    width: 100%;
+    min-height: 100vh;
+    color: #333333;
+}
+div.loading-wrap {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: opacity .45s ease-out;
+    will-change: opacity;
+    &.active{
+        opacity: 1;
+        z-index: 10;
+    }
+}
+
+.app-pop-tip {
+    display: none;
+    position: fixed;
+    width: auto;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 18px;
+    padding-right: 18px;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 0 6px 3px rgba(255,255,255,0.1);
+    opacity: 0;
+    transform: translate(-50%, 190px);
+    transition: transform 0.45s ease-out, opacity 0.5s linear;
+    z-index: 10;
+}
+.app-pop-tip.show {
+    display: block;
+}
+.app-pop-tip.active {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}

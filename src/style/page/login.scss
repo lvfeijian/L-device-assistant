@@ -1,0 +1,90 @@
+.login-page{
+    background: url('../../assets/bg.png') center center no-repeat;
+    display: flex;
+    flex-direction: column;
+    .welcome{
+        font-size: 48px;
+        line-height: 48px;
+        margin-left: 32px;
+        margin-top: 218px;
+    }
+    .title{
+        font-size: 60px;
+        margin-top: 24px;
+        margin-left: 32px;
+    }
+    .login{
+        margin: auto;
+        width: calc(100% - 64px);
+        margin-top: 73px;
+        background-color: #fff;
+        box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.08); 
+        .login_title{
+            font-size: 36px;
+            color: #0F4FFD;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .input{
+            position: relative;
+            width: calc(100% - 78px);
+            height: 100px;
+            margin-left: 39px;
+            margin-top: 40px;
+            span{
+                width: 30px;
+                height: 38px;
+                background-size: 30px 38px;
+                position: absolute;
+                padding: 0 45px;
+                top: 50%;
+                transform: translateY(-50%);
+                &::after{
+                    width: 1px;
+                    height: 32px;
+                    content: '';
+                    background-color: #D8D8D8;
+                    position: absolute;
+                    top: 50%;
+                    margin-left: 75px;
+                    transform: translateY(-50%);
+                }
+            }
+            input{
+                width: 100%;
+                height: 100px;
+                box-sizing: border-box;
+                padding-left: 160px;
+                outline: none;
+                background:none;  
+                border:none;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                font-size: 28px;
+                &::placeholder{
+                    font-size: 28px;
+                    color: #C0C3CC;
+                    font-style: normal;
+                }
+            }
+            .shouji{
+                background: url('../../assets/login/shouji.png') center center no-repeat;
+            }
+            .suo{
+                background: url('../../assets/login/mima.png') center center no-repeat;
+            }
+        }
+        .login{
+            height: 100px;
+            width: calc(100% - 78px);
+            margin-left: 39px;
+            background-color: #0F4FFD;
+            text-align: center;
+            line-height: 100px;
+            font-size: 36px;
+            color: #E4E6ED;
+            border-radius: 10px;
+            margin-bottom: 100px;
+        }
+    }
+}

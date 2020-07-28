@@ -1,0 +1,28 @@
+.goBack{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: 20px;
+    position: absolute;
+    cursor: pointer;
+    :hover{
+        cursor: pointer;
+    }
+    &::before,&::after{
+        width: 3px;
+        height: 20px;
+        position: absolute;
+        background-color: #000;
+        margin-left: 15px;
+    }
+    &::before{
+        transform: rotate(45deg);
+        margin-top: 4px;
+        content: '';
+    }
+    &::after{
+        transform: rotate(-45deg);
+        top: 18px;
+        content: '';
+    }
+}
